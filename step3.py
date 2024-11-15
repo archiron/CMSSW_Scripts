@@ -9,16 +9,16 @@ from Configuration.Eras.Era_Run3_2024_cff import Run3_2024
 
 if len(sys.argv) > 1:
     print(sys.argv)
-    print("step 1 - arg. 0 :", sys.argv[0])
-    print("step 1 - arg. 1 :", sys.argv[1])
-    print("step 1 - arg. 2 :", sys.argv[2])
-    print("step 1 - arg. 3 :", sys.argv[3])
-    print("step 1 - arg. 4 :", sys.argv[4])
+    print("step 3 - arg. 0 :", sys.argv[0]) # name of the script
+    print("step 3 - arg. 1 :", sys.argv[1]) # index
+    print("step 3 - arg. 2 :", sys.argv[2]) # path of the script ($LOG_SOURCE)
+    print("step 3 - arg. 3 :", sys.argv[3]) # nb of evts
+    print("step 3 - arg. 4 :", sys.argv[4]) # path of output
     ind = int(sys.argv[1])
     max_number = int(sys.argv[3])
     outputPath = sys.argv[4]
 else:
-    print("step 1 - rien")
+    print("step 3 - rien")
     ind = 0
     path = ''
     max_number = 10 # number of events
